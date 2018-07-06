@@ -369,6 +369,10 @@ class BotAI(object):
         """Ran on every game step (looped in realtime mode)."""
         raise NotImplementedError
 
+    def on_end(self, game_result):
+        """Ran on on end of a game."""
+        pass
+
 
 class CanAffordWrapper(object):
     def __init__(self, can_afford_minerals, can_afford_vespene):
